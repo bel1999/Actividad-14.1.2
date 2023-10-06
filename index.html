@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design y Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light pe-5">LOREM IPSUM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex d-lg-none mt-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light pe-5" aria-current="page">Dolor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50 pe-5">Sit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50">Amet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnopciones" class="nav-link text-white-50 pe-5 d-lg-none" data-bs-toggle="collapse" data-bs-target="#opciones" aria-controls="opciones" aria-expanded="false" aria-label="Toggle navigation">Opciones</a>
+                    </li>
+                </ul>
+                <form class="d-flex d-none d-lg-block" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <h3 class="text-center mt-5">Lorem ipsum...</h3>
+
+    <div id="carousel" class="carousel slide text-center mx-auto w-25 mb-2" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <p id="frase1"></p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <p id="frase2"></p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <p id="frase3"></p>
+            </div>
+        </div>
+    </div> 
+
+    <div class="grid-container">
+        <div class="d-none d-lg-block collapse" id="opciones">
+            <button type="button" class="btn w-100 text-decoration-underline text-start border-secondary" style="height: 60px;">Opción 1</button>
+            <button type="button" class="btn w-100 text-decoration-underline text-start border-secondary" style="height: 60px;">Opción 2</button>
+            <button type="button" class="btn w-100 text-decoration-underline text-start border-secondary" style="height: 60px;">Opción 3</button>
+            <button type="button" class="btn w-100 text-decoration-underline text-start border-secondary" style="height: 60px;">Opción 4</button>
+        </div>
+        <div class="flex-container">
+            <div id="parrafos" class="flex-container">
+                <div class="parrafo">Lorem ipsum dolor sit amet consectetur adipiscing elit felis leo lacinia, porta id duis faucibus pharetra quis vel mollis nascetur aptent, tristique consequat a curabitur libero fusce condimentum pretium lacus.</div>
+                <div class="parrafo">Massa quam nisi luctus tellus ac, interdum vestibulum sed hendrerit lacus suscipit, donec metus per potenti. Sodales senectus neque risus tempus sociis, inceptos luctus taciti in scelerisque hendrerit, suscipit egestas est aliquam.</div>
+                <div class="parrafo">Facilisi curabitur pretium etiam non lacus himenaeos laoreet hac, felis enim tincidunt turpis ultricies per vulputate, convallis suspendisse luctus taciti massa cum sodales.</div>
+                <div class="parrafo">Diam turpis netus velit ligula etiam vivamus integer inceptos fusce, nisi pulvinar natoque bibendum non ullamcorper taciti donec fames vel, convallis metus laoreet cursus consequat urna morbi phasellus.</div>
+                <div class="parrafo">Viverra fusce cras volutpat eget eros hac eleifend vitae arcu, magna in tempor tristique nisi vivamus a elementum nam, convallis erat phasellus interdum senectus aenean suscipit lobortis.</div>
+                <div class="parrafo">Mus malesuada fames condimentum lectus purus primis arcu ultricies, cursus aenean orci praesent sem augue semper mollis, vivamus volutpat auctor donec sollicitudin blandit faucibus.</div>
+                <div class="parrafo">Ad faucibus montes accumsan tempus rutrum luctus arcu nostra sodales, vehicula massa phasellus vestibulum dui himenaeos pulvinar blandit, vel turpis malesuada tempor eu curabitur hac eros.</div>
+                <div class="parrafo">Massa primis euismod cubilia dis congue nullam commodo fringilla litora, hac ridiculus natoque et magna maecenas metus volutpat sodales, dui erat scelerisque tristique vel molestie eleifend est.</div>
+                <div class="parrafo"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="ResponsiveDesign.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
